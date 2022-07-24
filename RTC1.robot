@@ -19,7 +19,7 @@ Travel Credential Login
 
 Hotel Booking
        Click Element    xpath=//*[@id="fadein"]//div[2]/nav/ul/li[2]/a
-       Input Text     xpath=//*[@id="fadein"]//span[1]/input   Berlin
-       Select Checkbox    xpath=//*[@id="fadein"]//tr[5]/td[6]
+       Input Text     xpath=//*[@id="fadein"]//span[@role="combobox"]      Berlin
+       Select Checkbox    xpath=//*[@id="fadein"]/span[@data-select2-id="1"]
        Sleep  3s
        Close Browser

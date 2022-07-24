@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220724 01:09:09.328" rpa="false" schemaversion="3">
+<suite id="s1" name="RTC1" source="C:\Users\Maya\IdeaProjects\PythonTest\RTC1.robot">
+<test id="s1-t1" name="Travel Credential Login" line="12">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220724 01:09:17.811" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/'.</msg>
+<status status="PASS" starttime="20220724 01:09:17.808" endtime="20220724 01:10:02.934"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220724 01:10:03.148" endtime="20220724 01:10:04.406"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="fadein"]//a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:04.409" level="INFO">Clicking element 'xpath=//*[@id="fadein"]//a[2]'.</msg>
+<status status="PASS" starttime="20220724 01:10:04.407" endtime="20220724 01:10:11.209"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath=//input[@name="email"]</arg>
+<arg>user@phptravels.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:11.210" level="INFO">Typing text 'user@phptravels.com' into text field 'xpath=//input[@name="email"]'.</msg>
+<status status="PASS" starttime="20220724 01:10:11.210" endtime="20220724 01:10:13.026"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>name=password</arg>
+<arg>demouser</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:13.029" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20220724 01:10:14.405" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220724 01:10:19.639" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220724 01:10:13.027" endtime="20220724 01:10:19.639"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>xpath=//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:19.641" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220724 01:10:19.640" endtime="20220724 01:10:25.366"/>
+</kw>
+<status status="PASS" starttime="20220724 01:09:17.688" endtime="20220724 01:10:25.581"/>
+</test>
+<test id="s1-t2" name="Hotel Booking" line="20">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//*[@id="fadein"]//div[2]/nav/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:26.618" level="INFO">Clicking element 'xpath=//*[@id="fadein"]//div[2]/nav/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220724 01:10:26.617" endtime="20220724 01:10:37.228"/>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<arg>xpath=//*[@id="fadein"]//tr[5]/td[6]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220724 01:10:37.635" level="INFO">Selecting checkbox 'xpath=//*[@id="fadein"]//tr[5]/td[6]'.</msg>
+<msg timestamp="20220724 01:10:41.087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220724 01:10:41.308" level="FAIL">Checkbox with locator 'xpath=//*[@id="fadein"]//tr[5]/td[6]' not found.</msg>
+<status status="FAIL" starttime="20220724 01:10:37.634" endtime="20220724 01:10:41.345"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220724 01:10:41.347" endtime="20220724 01:10:41.347"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220724 01:10:41.348" endtime="20220724 01:10:41.348"/>
+</kw>
+<status status="FAIL" starttime="20220724 01:10:26.459" endtime="20220724 01:10:41.350">Checkbox with locator 'xpath=//*[@id="fadein"]//tr[5]/td[6]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220724 01:09:09.333" endtime="20220724 01:10:41.353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="RTC1">RTC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

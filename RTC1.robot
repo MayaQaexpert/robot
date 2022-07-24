@@ -21,5 +21,4 @@ Hotel Booking
        Click Element    xpath=//*[@id="fadein"]//div[2]/nav/ul/li[2]/a
        Input Text     xpath=//*[@id="fadein"]//span[@role="combobox"]      Berlin
        Select Checkbox    xpath=//*[@id="fadein"]/span[@data-select2-id="1"]
-       Sleep  3s
        Close Browser

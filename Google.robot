@@ -1,18 +1,13 @@
 *** Settings ***
-
-Resource            ../CommonResource.robot
-Force Tags          MyTag
-
+Library  Selenium2Library
 
 *** Variables ***
+${url}  https://www.google.com/
 
-${robotVar} =            FooBarBaz
+${Browser}  chrome
+*** Test Cases ***
 
-
-*** Testcases ***
-
-Foo Test Case
-    [tags]              FooTag
-    [Documentation]     Created by John Doe
-    Do An Action        Argument
-    Do Another Action   ${robotVar}
+Amazon
+      Open Browser  ${url}  ${Browser}
+      Set Browser Implicit Wait    5
+      Input Text    name=q     soap
